@@ -36,3 +36,10 @@ _posts: list[Post] = [
 
 def get_all_posts() -> list[Post]:
     return _posts
+
+
+def set_next_post(post: Post) -> None:
+    _posts.append(post)
+
+def remove_post(post: Post) -> None:
+    _posts.remove(post)
