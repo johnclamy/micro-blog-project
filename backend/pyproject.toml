@@ -1,7 +1,7 @@
 [project]
 name = "backend"
 version = "0.1.0"
-description = "Add your description here"
+description = "Micro blog website"
 # readme = "README.md"
 authors = [
     { name = "johnclamy", email = "johnclamy@gmail.com" }
@@ -17,3 +17,12 @@ backend = "backend:main"
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "conftest.py"]
