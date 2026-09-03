@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException, status
 from backend.models.posts import Post
 from backend.repositories.post_repository import (
     PostCreate,
