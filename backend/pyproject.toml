@@ -2,7 +2,7 @@
 name = "backend"
 version = "0.1.0"
 description = "Add your description here"
-readme = "README.md"
+# readme = "README.md"
 authors = [
     { name = "johnclamy", email = "johnclamy@gmail.com" }
 ]
